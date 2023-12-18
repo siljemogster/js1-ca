@@ -1,4 +1,4 @@
-const url = "https://api.noroff.dev/api/v1/square-eyes";
+const url = "htttps://api.noroff.dev/api/v1/square-eyes";
 
 async function getMovies() {
 
