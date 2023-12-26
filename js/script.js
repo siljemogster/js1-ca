@@ -1,4 +1,4 @@
-import { url } from "./constants.jsss"; 
+import { url } from "./constants.js"; 
 
 async function fetchMovies () {
     try {
@@ -65,6 +65,12 @@ function createMovies(movie) {
     
         const moviePriceElement = document.createElement("p");
         moviePriceElement.textContent = movie.price;
+
+        const link = document.createElement("a"); 
+        link.classList.add("link");
+        link.textContent = "View details"; 
+        link.href = `movie.html?id${movie.id}`;  
+        
     
         movieElement.append(movieTitleElement);
         movieElement.append(movieDescriptionElement);
@@ -72,6 +78,7 @@ function createMovies(movie) {
         movieElement.append(movieReleasedElement);
         movieElement.append(movieRatingElement);
         movieElement.append(moviePriceElement);
+        movieElement.append(link);
     
 
     return movieElement;
