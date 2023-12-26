@@ -1,0 +1,20 @@
+.movies-container {
+
+}
+
+.movie {
+    border: 1px #ccc solid; 
+    padding: 2rem; 
+    margin: 1rem; 
+    position: relative; 
+}
+
+
+.error {
+    padding: 1rem; 
+    color: red; 
+    border: 1px red solid; 
+
+
+
+}
