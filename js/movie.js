@@ -4,6 +4,11 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString); 
 const id = params.get("id");
 
+if (!id) {
+  window.location.href = "/";
+}
+
+
 const detailUrl =`${url}/${id}`;
 console.log(detailUrl); 
 
@@ -11,10 +16,13 @@ async function fetchMovie(id) {
   const detailUrl = `${url}/${id}`; 
 
   try {
-    const response = await fetch (url);
+    const response = await fetch(detailUrl);
+
+
     const result = await response.json(); 
     displayMovie(result);
-
+    
+    
   } catch(error) {
     console.error(error); 
     const container = document.querySelector("#movie-container"); 
