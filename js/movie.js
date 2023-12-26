@@ -1,32 +1,24 @@
 import { url } from "./constants.js"; 
-const queryString = document.location.search; 
 
-console.log(queryString); 
-
+const queryString = document.location.search;  
 const params = new URLSearchParams(queryString); 
-
-console.log(params); 
-
 const id = params.get("id");
 
 const detailUrl =`${url}/${id}`;
 console.log(detailUrl); 
 
-async function fecthMovies (id) {
+async function fetchMovie(id) {
   const detailUrl = `${url}/${id}`; 
 
   try {
-    const response = await fetch(detailUrl);
+    const response = await fetch (url);
     const result = await response.json(); 
     displayMovie(result);
 
-  }
-
-  catch(error) {
+  } catch(error) {
     console.error(error); 
     const container = document.querySelector("#movie-container"); 
-    container.innerHTML = '<div class="error">There was an error fetching the movie</div>';
-    
+    container.innerHTML = '<div class="error">There was an error fetching the movie</div>'; 
   }
 }
 
@@ -48,7 +40,7 @@ function displayMovie(movie) {
   container.append(heading);
   container.append(description);
 
-}
+} 
 
 
 
