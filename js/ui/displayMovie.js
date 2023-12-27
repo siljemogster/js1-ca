@@ -1,36 +1,5 @@
-import { url } from "./constants.js"; 
 
-const queryString = document.location.search; 
-const params = new URLSearchParams(queryString);
-const id = params.get("id");
-
-
-async function fetchMovie(id) {
-  const detailUrl = `${url}/${id}`;
- 
-
-  try {
-    const response = await fetch(detailUrl);
-    const result = await response.json();  
-    displayMovie(result); 
-  }
-
-  catch(error) {
-    console.error(error); 
-    const container = document.querySelector("#movie-container"); 
-    container.innerHTML = '<div class="error">There was an error fetching the movie</div>'; 
-  } 
-}
-
-
-
-
-fetchMovie(id);
-
-
-
-
-function displayMovie(movie) {
+export function displayMovie(movie) {
     document.title = movie.title; 
 
   const container = document.querySelector("#movie-container"); 
@@ -72,4 +41,4 @@ function displayMovie(movie) {
   container.append(released);
   container.append(price);
 
-} 
+}

@@ -19,6 +19,8 @@ fetchMovies();
 
 
 
+
+
 function displayMovies(movies) {
     const movieContainer = document.querySelector("#movies-container"); 
 
@@ -36,6 +38,8 @@ function displayMovies(movies) {
     });
 
 }
+
+
 
 function createMovie(movie) {
         const movieElement = document.createElement("div");
