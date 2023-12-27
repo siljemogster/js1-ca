@@ -15,6 +15,6 @@ export async function handleDisplayMovie() {
     console.log(movie);
     displayMovie(movie);
   } catch (error) {
-    displayMessage("movie-container", error.message);
+    displayMessage("movie-container", error.message, "error");
   }
 }
