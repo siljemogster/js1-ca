@@ -19,8 +19,6 @@ fetchMovies();
 
 
 
-
-
 function displayMovies(movies) {
     const movieContainer = document.querySelector("#movies-container"); 
 

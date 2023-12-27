@@ -1,1 +1,1 @@
-export const url = "https://api.noroff.dev/api/v1/square-eyes"; 
+export const url = "https://api.noroff.dev/api/v1/square-eyesss"; 

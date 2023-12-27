@@ -1,22 +1,20 @@
-import { fetchMovie } from "../api/fetchMovie.js";
-import { displayMovie } from "../ui/displayMovie.js"; 
-import { displayMessage } from "../ui/display.Message.js";
+import { fetchMovie } from "./api/fetchMovie.js";
+import { displayMovie } from "../ui/displayMovie.js";
+import { displayMessage } from "../ui/displayMessage.js";
 import getQueryParam from "../helper/getQueryParam.js";
 
 export async function handleDisplayMovie() {
-    const id = getQueryParam("id");
+  const id = getQueryParam("id");
 
-    if (!id) {
-        window.location.href = "/"; 
-    }
+  if (!id) {
+    window.location.href = "/";
+  }
 
-    try {
-        const movie = await fetchMovie(id); 
-        console.log(movie); 
-        displayMovie(movie); 
-    } catch (error) {
-        displayMessage("movie-container", error.message); 
-    }
+  try {
+    const movie = await fetchMovie(id);
+    console.log(movie);
+    displayMovie(movie);
+  } catch (error) {
+    displayMessage("movie-container", error.message);
+  }
 }
-
-

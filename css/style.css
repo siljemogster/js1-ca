@@ -1,6 +1,3 @@
-.movies-container {
-
-}
 
 .movie {
     border: 1px #ccc solid; 
@@ -14,13 +11,10 @@ p {
 }
 
 
-
 .error {
     padding: 1rem; 
     color: red; 
     border: 1px red solid; 
-
-
 
 }
 
