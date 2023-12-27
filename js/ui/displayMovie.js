@@ -6,7 +6,7 @@ export function displayMovie(movie) {
 
   container.innerHTML = "";
 
-  const loader = document.querySelector('.loader');
+  const loader = document.querySelector("#loader");
   if (loader) {
   loader.remove(); 
 }

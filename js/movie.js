@@ -18,16 +18,12 @@ async function fetchMovie(id) {
   catch(error) {
     console.error(error); 
     const container = document.querySelector("#movie-container"); 
-    container.innerHTML = '<div class="error">There was an error fetching the movie</div>'; 
+    container.innerHTML = `<div class="error">There was an error fetching the movie</div>`; 
   } 
 }
 
 
-
-
 fetchMovie(id);
-
-
 
 
 function displayMovie(movie) {

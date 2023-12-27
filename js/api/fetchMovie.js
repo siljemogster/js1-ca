@@ -3,10 +3,9 @@ import { url } from "../constants.js";
 export async function fetchMovie(id) {
 
 
-
     const detailUrl = `${url}/${id}`;
 
-    const response = await fetch(detilUrl); 
+    const response = await fetch(detailUrl); 
 
     if (response.ok) {
         const results = await response.json();
