@@ -24,6 +24,11 @@ function displayMovies(movies) {
 
     movieContainer.innerHTML ="";
 
+    const loader = document.querySelector('.loader');
+    if (loader) {
+    loader.remove(); 
+}
+
     movies.forEach(function (movie) {
 
         const movieDetails = createMovie(movie)
@@ -48,24 +53,16 @@ function createMovie(movie) {
         const movieElement = document.createElement("div");
         movieElement.classList.add("movie");
     
-        const movieTitleElement = document.createElement("h3");
+        const movieTitleElement = document.createElement("h2");
         movieTitleElement.textContent = movie.title;
+
+        const image = document.createElement("img");
+        image.src = movie.image; 
+        image.alt = movie.title;
     
         const movieDescriptionElement = document.createElement("p");
         movieDescriptionElement.textContent = movie.description;
     
-        const movieGenreElement = document.createElement("p");
-        movieGenreElement.textContent = movie.genre;
-    
-        const movieReleasedElement = document.createElement("p");
-        movieReleasedElement.textContent = movie.released;
-    
-        const movieRatingElement = document.createElement("p");
-        movieRatingElement.textContent = movie.rating;
-    
-        const moviePriceElement = document.createElement("p");
-        moviePriceElement.textContent = movie.price;
-
         const link = document.createElement("a"); 
         link.classList.add("link");
         link.textContent = "View details"; 
@@ -73,11 +70,8 @@ function createMovie(movie) {
         
     
         movieElement.append(movieTitleElement);
+        movieElement.append(image);
         movieElement.append(movieDescriptionElement);
-        movieElement.append(movieGenreElement);
-        movieElement.append(movieReleasedElement);
-        movieElement.append(movieRatingElement);
-        movieElement.append(moviePriceElement);
         movieElement.append(link);
     
 

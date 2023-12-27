@@ -9,6 +9,11 @@
     position: relative; 
 }
 
+p {
+    font-size: 18px;
+}
+
+
 
 .error {
     padding: 1rem; 

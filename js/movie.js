@@ -62,8 +62,6 @@ function displayMovie(movie) {
   const price = document.createElement("p"); 
   price.innerText = `Price: $${movie.price}`;
 
-  
-
   container.append(heading);
   container.append(image); 
   container.append(description); 
