@@ -11,7 +11,7 @@ async function fetchMovie(id) {
  
 
   try {
-    const response = await fetch(detailUrl);
+    const response = await fetch(url);
     const result = await response.json();  
     displayMovie(result); 
   }
