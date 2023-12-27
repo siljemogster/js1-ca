@@ -1,22 +1,74 @@
 import { url } from "./constants.js"; 
 
-const queryString = document.location.search;  
-const params = new URLSearchParams(queryString); 
+const queryString = document.location.search; 
+const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-if (!id) {
-  window.location.href = "/";
-}
 
-
-const detailUrl =`${url}/${id}`;
-console.log(detailUrl); 
 
 async function fetchMovie(id) {
-  const detailUrl = `${url}/${id}`; 
+  const detailUrl = `${url}/${id}`;
+ 
 
   try {
     const response = await fetch(detailUrl);
+    const result = await response.json();  
+    displayMovie(result); 
+  }
+
+  catch(error) {
+    console.error(error); 
+    const container = document.querySelector("#movie-container"); 
+    container.innerHTML = '<div class="error">There was an error fetching the movie</div>'; 
+  } 
+}
+
+
+fetchMovie(id);
+
+
+function displayMovie(movie) {
+  console.log(movie); 
+  const container = document.querySelector("#movie-container"); 
+
+  console.log(container); 
+
+
+
+  const heading = document.createElement("h1"); 
+  heading.innerText = movie.title;
+ 
+  const description = document.createElement("p"); 
+  description.innerText = movie.description; 
+
+  container.append(heading);
+  container.append(description); 
+
+}
+
+
+
+
+
+
+
+/*const queryString = document.location.search; 
+const params = new URLSearchParams(queryString); 
+const id = params.get("id");  
+
+
+if (!id) {
+  document.location.href = "/";
+}
+
+const url =`${url}/${id}`;
+console.log(url); 
+
+async function fetchMovie() {
+  const url = `${url}/${id}`; 
+
+  try {
+    const response = await fetch(url);
 
 
     const result = await response.json(); 

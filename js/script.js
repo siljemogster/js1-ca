@@ -26,7 +26,7 @@ function displayMovies(movies) {
 
     movies.forEach(function (movie) {
 
-        const movieDetails = createMovies(movie)
+        const movieDetails = createMovie(movie)
         movieContainer.append(movieDetails); 
 
 
@@ -44,7 +44,7 @@ function displayMovies(movies) {
 
 }
 
-function createMovies(movie) {
+function createMovie(movie) {
         const movieElement = document.createElement("div");
         movieElement.classList.add("movie");
     
@@ -69,7 +69,7 @@ function createMovies(movie) {
         const link = document.createElement("a"); 
         link.classList.add("link");
         link.textContent = "View details"; 
-        link.href = `movie.html?id${movie.id}`;  
+        link.href = `movie.html?id=${movie.id}`;  
         
     
         movieElement.append(movieTitleElement);
