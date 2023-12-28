@@ -1,6 +1,6 @@
 import { fetchMovies } from "../api/fetchMovies.js";
-import { displayMovies } from "../ui/displayMovies.js";
-import { displayMessage } from "../ui/displayMessage.js";
+import { displayMovies } from "../ui/movies/displayMovies.js";
+import { displayMessage } from "../ui/shared/displayMessage.js";
 
 export async function handleDisplayMovies() {
   try {

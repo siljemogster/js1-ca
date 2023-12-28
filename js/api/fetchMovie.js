@@ -10,5 +10,5 @@ export async function fetchMovie(id) {
     return results;
   }
 
-  throw new Error(`There was an error fetching the movie with id: ${id}`);
+  throw new Error("There was an error fetching the movie with id: ${id}");
 }

@@ -1,6 +1,6 @@
-import { fetchMovie } from "./api/fetchMovie.js";
-import { displayMovie } from "../ui/displayMovie.js";
-import { displayMessage } from "../ui/displayMessage.js";
+import { fetchMovie } from "../api/fetchMovie.js";
+import { displayMovie } from "../ui/movies/displayMovie.js";
+import { displayMessage } from "../ui/shared/displayMessage.js";
 import { getQueryParam } from "../helper/getQueryParam.js";
 
 export async function handleDisplayMovie() {
@@ -12,7 +12,6 @@ export async function handleDisplayMovie() {
 
   try {
     const movie = await fetchMovie(id);
-    console.log(movie);
     displayMovie(movie);
   } catch (error) {
     displayMessage("movie-container", error.message, "error");

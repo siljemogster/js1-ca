@@ -1,5 +1,5 @@
 export function displayMovie(movie) {
-  document.title = movie.title;
+  document.title = `${movie.title} | ${document.title}`;
 
   const container = document.querySelector("#movie-container");
 
