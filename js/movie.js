@@ -1,8 +1,17 @@
-import { url } from "./constants.js";
+import { handleDisplayMovie } from "./handlers/handleDisplayMovie.js"; 
+
+handleDisplayMovie(); 
+
+
+/*import { url } from "./constants.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
+
+if (!id) {
+  document.location.href = "/";
+}
 
 async function fetchMovie(id) {
   const detailUrl = `${url}/${id}`;
@@ -21,7 +30,7 @@ async function fetchMovie(id) {
 fetchMovie(id);
 
 function displayMovie(movie) {
-  document.title = movie.title;
+  document.title = `${movie.title} | ${document.title}`;
 
   const container = document.querySelector("#movie-container");
 
@@ -61,4 +70,4 @@ function displayMovie(movie) {
   container.append(rating);
   container.append(released);
   container.append(price);
-}
+} */

@@ -1,14 +1,9 @@
-import { createMovie } from "../ui/displayMovie.js";
+import { createMovie } from "./createMovie.js";
 
 export function displayMovies(movies) {
   const movieContainer = document.querySelector("#movies-container");
 
   movieContainer.innerHTML = "";
-
-  const loader = document.querySelector(".loader");
-  if (loader) {
-    loader.remove();
-  }
 
   movies.forEach(function (movie) {
     const movieDetails = createMovie(movie);

@@ -1,4 +1,8 @@
-import { url } from "./constants.js";
+import { handleDisplayMovies } from "./handlers/handleDisplayMovies.js";
+
+handleDisplayMovies (); 
+
+/*import { url } from "./constants.js";
 
 async function fetchMovies() {
   try {
@@ -19,11 +23,6 @@ function displayMovies(movies) {
   const movieContainer = document.querySelector("#movies-container");
 
   movieContainer.innerHTML = "";
-
-  const loader = document.querySelector(".loader");
-  if (loader) {
-    loader.remove();
-  }
 
   movies.forEach(function (movie) {
     const movieDetails = createMovie(movie);
@@ -56,4 +55,4 @@ function createMovie(movie) {
   movieElement.append(link);
 
   return movieElement;
-}
+} */

@@ -5,11 +5,6 @@ export function displayMovie(movie) {
 
   container.innerHTML = "";
 
-  const loader = document.querySelector("#loader");
-  if (loader) {
-    loader.remove();
-  }
-
   const heading = document.createElement("h1");
   heading.innerText = movie.title;
 
