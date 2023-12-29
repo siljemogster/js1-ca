@@ -5,7 +5,4 @@ function getQueryParam(param) {
   return value;
 }
 
-export default getQueryParam; 
-
-
-
+export default getQueryParam;
