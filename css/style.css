@@ -60,7 +60,7 @@ p {
   display: inline-block;
   margin: 6px;
   text-decoration: solid;
-
+  text-transform: uppercase;
 }
 
 .cardicon {
