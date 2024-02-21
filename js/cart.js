@@ -1,5 +1,10 @@
-import { displayCart } from "./ui/movies/displayCart";
+import * as storage from "./helpers/storage/index.js"; 
 
-displayCart();
+console.log(storage); 
 
-console.log(cart);
+const cart = storage.getCart(); 
+
+console.log(cart); 
+
+
+
