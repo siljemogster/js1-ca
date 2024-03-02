@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
     <title>Order Summary</title>
-</head>
-<body>
-    <div>
-        <section class="form">
-            <h4>Credit- or debit card</h4>
-            <form action="form-success.php" method="POST"></form>
-            <fieldset>
-            <section>
-                <label for="text">CARD HOLDER'S NAME</label>
-                <input type="CARD" name="name" id="name" class="form_input" required>
-            </section>
-            <section>
-                <label for="CARD">CARD NUMBER</label>
-                <input type="CARD" name="name" id="name" class="form_input" required>
-            </section>
-            <section>
-                <label for="CARD">MM/DD</label>
-                <input type="CARD" name="phone" id="phone" class="form_input" required>
-                <label for="CARD">CVC</label>
-                <input type="CARD" name="email" id="email" class="form_input" required>
-            </fieldset>    
+  </head>
+  <body>
+    <main>
+      <section class="form">
+        <h2>Credit- or debit card</h2>
+        <form>
+          <fieldset>
             <div>
-                <a href="index.html" class="cobutton">Buy now</a>
+              <label for="text">CARD HOLDER'S NAME</label>
+              <input
+                type="CARD"
+                name="name"
+                id="name"
+                class="form_input"
+                required
+                minlength="8"
+              />
             </div>
-</body>
+            <div>
+              <label for="CARD">CARD NUMBER</label>
+              <input
+                type="CARD"
+                name="name"
+                id="name"
+                class="form_input"
+                required
+              />
+            </div>
+            <div>
+              <label for="CARD">MM/DD</label>
+              <input
+                type="CARD"
+                name="phone"
+                id="phone"
+                class="form_input"
+                required
+              />
+              <label for="CARD">CVC</label>
+              <input
+                type="CARD"
+                name="email"
+                id="email"
+                class="form_input"
+                required
+              />
+            </div>
+            <div>
+                <button type="submit" class="cobutton">PAY</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

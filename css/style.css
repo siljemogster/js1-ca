@@ -68,3 +68,7 @@ p {
   width: 20%; 
 }
 
+.add-cta {
+  display: block; 
+  margin-top: 1rem;  
+}
