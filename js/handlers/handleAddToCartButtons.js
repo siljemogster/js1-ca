@@ -14,10 +14,8 @@ function handleCartClick(event) {
   console.log(event.target);
 
   const { id, title, price, image } = event.target.dataset;
-  const item = { id, title, price, image  };
-  console.log(item); 
+  const item = { id, title, price, image };
 
-  const cart = storage.getCart();
-  cart.push(item);
-  storage.saveCart(cart);
+  console.log(item);
+  storage.addItemToCart(item); 
 }
