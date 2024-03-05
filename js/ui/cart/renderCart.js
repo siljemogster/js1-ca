@@ -55,6 +55,8 @@ function createCartItem(item) {
   deleteButton.addEventListener("click", (event) => {
     const { id } = event.target.dataset;
     storage.removeItemFromCart(id);
+    renderCart(); 
+    renderItenCount(); 
   });
 
   div.appendChild(priceContainer);
