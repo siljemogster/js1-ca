@@ -16,6 +16,7 @@ function handleCartClick(event) {
   const { id, title, price, image } = event.target.dataset;
   const item = { id, title, price, image };
 
-  console.log(item);
-  storage.addItemToCart(item); 
+ 
+  storage.addItemToCart(item);
+  renderItemCount();  
 }
