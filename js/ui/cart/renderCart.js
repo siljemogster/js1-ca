@@ -9,6 +9,8 @@ export function renderCart() {
     return;
   }
 
+  renderCartTotal(); 
+
   cart.forEach((item) => {
     const cartItem = createCartItem(item);
     container.appendChild(cartItem);
