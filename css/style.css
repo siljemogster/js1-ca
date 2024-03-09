@@ -15,10 +15,17 @@ body {
 p {
   padding: 7px; 
   font-size: 18px;
+  color: white; 
+  text-decoration: none;
 }
 
 h1 {
   padding: 20px; 
+  color: white; 
+}
+
+h2 {
+  color: white;
 }
 
 .movie {
@@ -28,6 +35,14 @@ h1 {
   position: relative;
 }
 
+.movie-container {
+  color: white; 
+
+}
+
+.movies-container {
+  color: white; 
+}
 
 .error {
   padding: 1rem;

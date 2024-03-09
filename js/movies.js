@@ -1,4 +1,4 @@
-import { handleDisplayMovies } from "./handlers/handleDisplayMovies.js";
+import { handleDisplayMovies } from "../js/handlers/handleDisplayMovies.js";
 
 handleDisplayMovies();
 renderItemCount();
