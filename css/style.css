@@ -203,6 +203,9 @@ li {
   color: black;
   text-align: center;
   padding: 20px;
+}
+
+.text-positioned a {
   text-decoration: none;
 }
 
