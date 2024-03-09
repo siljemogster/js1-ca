@@ -7,6 +7,15 @@
 
 p {
   font-size: 18px;
+  color: black; 
+}
+
+h1 {
+  color: black; 
+}
+
+h2 {
+  color: black; 
 }
 
 .error {
@@ -86,23 +95,23 @@ p {
   align-items: center;
   list-style: none; 
   position: relative; 
-  background-color: black; 
+  background-color: white; 
   padding: 12px 20px;
-  color: white;  
+  color: black;  
 }
 
 
 .menu li a {
   display: inline-block; 
   text-decoration: none;
-  color: white;
+  color: black;
   text-align: center; 
   transition: 0.15s ease-in-out; 
   position: relative; 
   text-transform: uppercase;
   font-weight: lighter; 
   padding-left: 10px; 
-  padding-right: 20px; 
+  padding-right: 30px; 
 }
 
 .menu li a::after {
