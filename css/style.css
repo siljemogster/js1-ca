@@ -10,10 +10,6 @@ body {
   color: white; 
 }
 
-main {
-
-}
-
 
 
 p {
@@ -115,7 +111,7 @@ h1 {
 
 .logo img {width: 80px;}
 .menu {display: flex;}
-.menu li {padding-left: 30px;}
+.menu li {padding-left: 10px;}
 .menu li a {
     display: inline-block; 
     text-decoration: none;
@@ -193,7 +189,7 @@ li {
 #check {
   display: none;
 }
-@media (max-width: 300px) {
+@media (max-width: 60px) {
   .menu {
     flex-direction: column;
     align-items: center;
