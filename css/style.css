@@ -35,21 +35,19 @@ p {
   }
 }
 
-
-
 .form {
-  width: 50%; 
-  padding: 20px; 
+  width: 50%;
+  padding: 20px;
 }
 
 .form_input {
-  width: 100%; 
-  margin-bottom: 10px; 
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .cobutton {
-  width: 100px; 
-  text-align: center; 
+  width: 100px;
+  text-align: center;
 }
 
 .cobutton {
@@ -64,133 +62,152 @@ p {
 }
 
 .cardicon {
-  height: 20%; 
-  width: 20%; 
+  height: 20%;
+  width: 20%;
 }
 
 .add-cta {
-  display: block; 
-  margin-top: 1rem;  
+  display: block;
+  margin-top: 1rem;
 }
 
 .cart-icon {
-  display: block; 
-  
-
+  display: block;
 }
 
 .nav-bar {
-  width: 100%; 
-  display: flex; 
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none; 
-  position: relative; 
-  background-color: black; 
+  list-style: none;
+  position: relative;
+  background-color: black;
   padding: 12px 20px;
-  color: white;  
+  color: white;
 }
 
-
 .menu li a {
-  display: inline-block; 
+  display: inline-block;
   text-decoration: none;
   color: white;
-  text-align: center; 
-  transition: 0.15s ease-in-out; 
-  position: relative; 
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
   text-transform: uppercase;
-  font-weight: lighter; 
-  padding-left: 10px; 
-  padding-right: 20px; 
+  font-weight: lighter;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 .menu li a::after {
   content: "";
-  position: absolute; 
-  bottom: 0; 
-  left: 0; 
-  width: 0; 
-  height: 1px; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
   background-color: black;
   color: white;
   transition: 0.15s ease-in-out;
 }
 
-.menu li a:hover:after {width: 100%;}
-.open-menu , .close-menu {
-  position: absolute; 
-  color: white; 
-  cursor: pointer; 
-  font-size: 1.5rem; 
-  display: none;  
+.menu li a:hover:after {
+  width: 100%;
 }
-
-
-
-
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
 
 .open-menu {
   top: 50%;
-  right: 20px; 
-  transform: translateY(-50%); 
+  right: 20px;
+  transform: translateY(-50%);
 }
 
 .close-menu {
-  top: 20px; 
-  right: 20px; 
+  top: 20px;
+  right: 20px;
 }
 
 li {
-  display: inline; 
- 
+  display: inline;
 }
 
-
 .header {
-  padding: 30px; 
+  padding: 30px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .logo {
- height: 50px; 
- padding-left: 20px;
+  height: 50px;
+  padding-left: 20px;
 }
 
-
-#check {display: none;}
-@media(max-width: 620px){
-    .menu {
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        width: 80%; 
-        height: 100vh; 
-        position: fixed; 
-        top: 0; 
-        right: -100%; 
-        z-index: 100; 
-        background-color: var(--color2);
-        transition: all 0.2s ease-in-out;
-
-    }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
-
+#check {
+  display: none;
 }
-
-
-
-
-@media(max-width: 970px) {
-
-
-  .header {
-      text-align: center; 
+@media (max-width: 620px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--color2);
+    transition: all 0.2s ease-in-out;
   }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
 
+@media (max-width: 970px) {
+  .header {
+    text-align: center;
+  }
+}
 
+.shoppingbutton {
+  background: #ef952b;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: solid;
+  text-align: center;
+  text-transform: lowerrcase;
+}
+
+.text-positioned {
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.button-positioned {
+  text-align: center;
+  position: relative;
+  padding: 20px;
 }
