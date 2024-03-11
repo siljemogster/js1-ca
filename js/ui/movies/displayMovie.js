@@ -35,6 +35,11 @@ export function displayMovie(movie) {
   addToCartButton.dataset.action = "add-to-cart";
   addToCartButton.textContent = "Add to Cart"; 
 
+  const addButton = document.createElement("button");
+  addButton.classList.add("add-cta");
+  addButton.textContent = "Pay now";
+  
+
   container.append(heading);
   container.append(image);
   container.append(description);
@@ -42,5 +47,7 @@ export function displayMovie(movie) {
   container.append(rating);
   container.append(released);
   container.append(price);
-  container.append(addToCartButton); 
+  container.append(addToCartButton);
+  container.append(addButton);
+  
 }
