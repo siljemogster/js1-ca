@@ -1,9 +1,26 @@
 .movie {
   border: 1px #ccc solid;
-  padding: 2rem;
+  padding: 1rem;
   margin: 1rem;
-  position: relative;
+  position: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+
 }
+
+.movie img {
+  max-width: 300px;
+  height: auto; 
+  margin-right: 1rem;
+
+}
+
+.movie p {
+  max-width: 300px;
+  height: auto; 
+  margin-right: 1rem;
+}
+
 
 p {
   font-size: 18px;
