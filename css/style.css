@@ -154,7 +154,7 @@ h2 {
 }
 
 .menu li a:hover:after {
-  width: 100%;
+  width: 50%;
 }
 .open-menu,
 .close-menu {
