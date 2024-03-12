@@ -4,21 +4,22 @@
   margin: 1rem;
   position: relative;
   max-width: 300px;
-
+  
 }
 
 .movie img {
   max-width: 300px;
-  height: auto; 
+  height: auto;
   margin-right: 1rem;
-
 }
 
 .movie p {
   max-width: 300px;
-  height: auto; 
+  height: auto;
   margin-right: 1rem;
+  text-align: center;
 }
+
 
 
 
@@ -26,22 +27,33 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: black;
-  color: white; 
+  color: white;
 }
-
-
 
 p {
-  padding: 7px; 
+  padding: 7px;
   font-size: 18px;
-  color: white; 
+  color: white;
   text-decoration: none;
+  text-align: center;
+  
 }
 
-h1 {
-  padding: 20px; 
-  color: white; 
+
+a {
+  color: white;
   text-decoration: none;
+  padding: 7px;
+  text-align: center;
+}
+
+
+
+h1 {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  
 }
 
 h2 {
@@ -49,7 +61,10 @@ h2 {
   text-decoration: none;
 }
 
-
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .error {
   padding: 1rem;
@@ -81,7 +96,6 @@ h2 {
   max-width: 400px;
   padding: 10px;
   color: white;
-
 }
 
 .form_input {
@@ -89,7 +103,6 @@ h2 {
   margin-bottom: 20px;
   margin-top: 15px;
   text-decoration: none;
-  
 }
 
 .cobutton {
@@ -108,13 +121,14 @@ h2 {
 .cardicon {
   height: 20%;
   width: 20%;
-  
 }
 
 .add-cta {
   display: block;
   margin-top: 1rem;
 }
+
+
 
 .cart-icon {
   display: block;
@@ -132,18 +146,24 @@ h2 {
   color: white;
 }
 
-.logo img {width: 80px;}
-.menu {display: flex;}
-.menu li {padding-left: 10px;}
+.logo img {
+  width: 80px;
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  padding-left: 10px;
+}
 .menu li a {
-    display: inline-block; 
-    text-decoration: none;
-    color: white;
-    text-align: center; 
-    transition: 0.15s ease-in-out; 
-    position: relative; 
-    text-transform: uppercase;
-    font-weight: lighter; 
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 .menu li a {
@@ -261,19 +281,31 @@ li {
 .text-positioned {
   text-align: center;
   padding: 20px;
-  
 }
 
 .text-positioned a {
   text-decoration: none;
-  color: white; 
-  
+  color: white;
 }
 
 .button-positioned {
   text-align: center;
   position: relative;
   padding: 20px;
-  
-  
 }
+
+button {
+  background: #ef952b;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+
