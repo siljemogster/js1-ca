@@ -68,8 +68,9 @@ h2 {
 }
 
 .form {
-  width: 75%;
-  padding: 15px;
+  width: 100%;
+  padding: 20px;
+
 }
 
 .form_input {
