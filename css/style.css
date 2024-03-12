@@ -194,11 +194,11 @@ li {
 #check {
   display: none;
 }
-@media (max-width: 400px) {
+@media (max-width: 930px) {
   .menu {
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     height: 100vh;
     position: fixed;
@@ -219,14 +219,14 @@ li {
   }
   .open-menu,
   .close-menu {
-    display: block;
+    display: block; 
   }
   #check:checked ~ .menu {
     right: 0;
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 930px) {
   .header {
     text-align: center;
   }
