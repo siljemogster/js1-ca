@@ -37,7 +37,7 @@ export function displayMovie(movie) {
 
   const addButton = document.createElement("button");
   addButton.classList.add("add-cta");
-  addButton.textContent = "Pay now";
+
   
 
   container.append(heading);
@@ -48,6 +48,6 @@ export function displayMovie(movie) {
   container.append(released);
   container.append(price);
   container.append(addToCartButton);
-  container.append(addButton);
+  
   
 }
