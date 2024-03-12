@@ -29,49 +29,52 @@
     <main>
       <section class="form">
         <h2>Fill in our credit- or debit card details</h2>
-        <form>
+        <form action="payment.html">
           <fieldset>
             <div>
-              <label for="text">CARD HOLDER'S NAME</label>
+              <label for="cardholder">Card holder's name</label>
               <input
-                type="CARD"
-                name="name"
-                id="name"
+                type="text"
+                name="cardholder"
+                id="cardholder"
                 class="form_input"
                 required
-                minlength="8"
+                minlength="6"
               />
             </div>
             <div>
-              <label for="CARD">CARD NUMBER</label>
+              <label for="cardnumber">Card number</label>
               <input
-                type="CARD"
-                name="name"
-                id="name"
+                type="text"
+                name="cardnumber"
+                id="cardnumber"
                 class="form_input"
                 required
+                minlength="16"
               />
             </div>
             <div>
-              <label for="CARD">MM/DD</label>
+              <label for="expiration">MM/DD</label>
               <input
-                type="CARD"
-                name="phone"
-                id="phone"
+                type="text"
+                name="expiration"
+                id="expiration"
                 class="form_input"
                 required
+                minlength="4"
               />
-              <label for="CARD">CVC</label>
+              <label for="cvc">CVC</label>
               <input
-                type="CARD"
-                name="email"
-                id="email"
+                type="text"
+                name="cvc"
+                id="cvc"
                 class="form_input"
                 required
+                minlength="3"
               />
             </div>
             <div>
-                <button a href="payment.html" class="cobutton" type="submit">PAY</button>
+              <button type="submit" class="cobutton">PAY</button>
             </div>
           </fieldset>
         </form>
