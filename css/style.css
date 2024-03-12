@@ -74,8 +74,9 @@ h2 {
 }
 
 .form_input {
-  width: 95%;
+  width: 100%;
   margin-bottom: 20px;
+  margin-top: 15px;
   text-decoration: none;
 }
 
