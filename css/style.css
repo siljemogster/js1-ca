@@ -1,8 +1,27 @@
-*{
-  box-sizing: border-box; 
-  margin: 0px; 
-  padding: 0px; 
+.movie {
+  border: 1px #ccc solid;
+  padding: 1rem;
+  margin: 1rem;
+  position: relative;
+  max-width: 300px;
+
 }
+
+.movie img {
+  max-width: 300px;
+  height: auto; 
+  margin-right: 1rem;
+
+}
+
+.movie p {
+  max-width: 300px;
+  height: auto; 
+  margin-right: 1rem;
+}
+
+
+
 
 body {
   font-family: "Roboto", sans-serif;
