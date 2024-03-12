@@ -11,6 +11,10 @@ p {
   text-decoration: none; 
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   color: black; 
 }
@@ -71,6 +75,37 @@ h2 {
   margin: 6px;
   text-decoration: solid;
   text-transform: uppercase;
+}
+
+
+.shoppingbutton {
+  background: #ef952b;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: solid;
+  text-align: center;
+  text-transform: lowerrcase;
+}
+
+.text-positioned {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.text-positioned a {
+  text-decoration: none;
+  
+}
+
+.button-positioned {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  
+  
 }
 
 .cardicon {

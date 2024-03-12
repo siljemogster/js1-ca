@@ -38,7 +38,7 @@
     <main>
       <section class="form">
         <h2>Credit- or debit card</h2>
-        <form>
+        <form action="payment.html">
           <fieldset>
             <div>
               <label for="text">CARD HOLDER'S NAME</label>
@@ -48,7 +48,7 @@
                 id="name"
                 class="form_input"
                 required
-                minlength="8"
+                minlength="6"
               />
             </div>
             <div>
@@ -59,6 +59,7 @@
                 id="name"
                 class="form_input"
                 required
+                minlength="16"
               />
             </div>
             <div>
@@ -69,6 +70,7 @@
                 id="phone"
                 class="form_input"
                 required
+                minlength="4"
               />
               <label for="CARD">CVC</label>
               <input
@@ -77,11 +79,11 @@
                 id="email"
                 class="form_input"
                 required
+                minlength="6"
               />
             </div>
             <div>
                 <button type="submit" class="cobutton">PAY</button>
-                <link href=""
             </div>
           </fieldset>
         </form>
