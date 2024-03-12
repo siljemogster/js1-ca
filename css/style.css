@@ -2,8 +2,7 @@
   border: 1px #ccc solid;
   padding: 1rem;
   margin: 1rem;
-  position: flex;
-  flex-wrap: wrap;
+  position: relative;
   max-width: 300px;
 
 }
