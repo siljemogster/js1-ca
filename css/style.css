@@ -68,13 +68,13 @@ h2 {
 }
 
 .form {
-  max-width: 500px;
+  max-width: 400px;
   padding: 10px;
 
 }
 
 .form_input {
-  width: 100%;
+  width: 95%;
   margin-bottom: 20px;
   text-decoration: none;
 }
