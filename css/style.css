@@ -88,6 +88,14 @@ h2 {
   text-decoration: none;
 }
 
+.text {
+  text-align: center;
+  margin-left: 180px; 
+  margin-right: 180px; 
+
+}
+
+
 div {
   display: flex; 
   flex-wrap: wrap;
