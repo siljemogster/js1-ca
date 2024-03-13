@@ -4,8 +4,7 @@
   margin: 1rem;
   position: relative;
   max-width: 300px;
-  display: flex; 
-  flex-wrap: wrap;
+  
   
 }
 
@@ -22,6 +21,36 @@
 }
 
 
+#movie-container {
+  display: block;
+  max-width: 500px;
+  align-items: center;
+}
+
+#movie-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#movie-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+#movie-container p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#movie-container button {
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px; 
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: black;
@@ -33,6 +62,7 @@ p {
   font-size: 18px;
   color: white;
   text-decoration: none;
+  padding-bottom: 20px; 
   
 }
 
@@ -41,6 +71,7 @@ a {
   color: white;
   text-decoration: none;
   padding: 7px;
+
 }
 
 
@@ -57,10 +88,20 @@ h2 {
   text-decoration: none;
 }
 
-.container {
-  display: flex;
+div {
+  display: flex; 
   flex-wrap: wrap;
 }
+
+
+.link {
+  text-decoration: underline;
+  padding-left: 100px;
+  padding-right: 100px; 
+}
+
+
+
 
 .error {
   padding: 1rem;
@@ -120,8 +161,9 @@ h2 {
 }
 
 .add-cta {
-  display: block;
+  display: block; 
   margin-top: 1rem;
+  
 }
 
 
@@ -290,6 +332,7 @@ li {
   text-align: center;
   position: relative;
   padding: 20px;
+  
 }
 
 button {
@@ -297,8 +340,11 @@ button {
   color: black;
   padding: 10px 20px;
   border-radius: 5px;
-  display: inline-block;
+  min-width: 60px;
+  max-height: 40px; 
   text-decoration: none;
   text-align: center;
   padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
 }

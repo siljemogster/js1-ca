@@ -2,7 +2,7 @@ export function createMovie(movie) {
 
   const { title, image, description, id , price } = movie; 
 
-  const movieElement = document.createElement("container");
+  const movieElement = document.createElement("div");
   movieElement.classList.add("movie");
 
   const movieTitleElement = document.createElement("h2");
