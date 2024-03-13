@@ -4,8 +4,6 @@
   margin: 1rem;
   position: relative;
   max-width: 300px;
-  
-  
 }
 
 .movie img {
@@ -19,7 +17,6 @@
   height: auto;
   margin-right: 1rem;
 }
-
 
 #movie-container {
   display: block;
@@ -48,7 +45,7 @@
 #movie-container button {
   align-items: center;
   margin-left: 200px;
-  margin-right: 200px; 
+  margin-right: 200px;
 }
 
 body {
@@ -62,25 +59,19 @@ p {
   font-size: 18px;
   color: white;
   text-decoration: none;
-  padding-bottom: 20px; 
-  
+  padding-bottom: 20px;
 }
-
 
 a {
   color: white;
   text-decoration: none;
   padding: 7px;
-
 }
-
-
 
 h1 {
   padding: 20px;
   color: white;
   text-decoration: none;
-  
 }
 
 h2 {
@@ -90,26 +81,20 @@ h2 {
 
 .text {
   text-align: center;
-  margin-left: 180px; 
-  margin-right: 180px; 
-
+  margin-left: 180px;
+  margin-right: 180px;
 }
-
 
 div {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
 }
-
 
 .link {
   text-decoration: underline;
   padding-left: 100px;
-  padding-right: 100px; 
+  padding-right: 100px;
 }
-
-
-
 
 .error {
   padding: 1rem;
@@ -169,12 +154,9 @@ div {
 }
 
 .add-cta {
-  display: block; 
+  display: block;
   margin-top: 1rem;
-  
 }
-
-
 
 .cart-icon {
   display: block;
@@ -190,6 +172,29 @@ div {
   background-color: black;
   padding: 12px 20px;
   color: white;
+}
+
+nav {
+  background-color: black;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #ef952b;
+}
+
+.nav-link {
+  border-bottom: 3px solid #ef952b;
 }
 
 .logo img {
@@ -301,13 +306,11 @@ li {
   .open-menu,
   .close-menu {
     display: block;
-  
   }
   #check:checked ~ .menu {
-    left: 0; 
-    color: white; 
-
-}
+    left: 0;
+    color: white;
+  }
 }
 
 @media (max-width: 930px) {
@@ -340,7 +343,6 @@ li {
   text-align: center;
   position: relative;
   padding: 20px;
-  
 }
 
 button {
@@ -349,7 +351,7 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   min-width: 60px;
-  max-height: 40px; 
+  max-height: 40px;
   text-decoration: none;
   text-align: center;
   padding: 10px;
