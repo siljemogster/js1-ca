@@ -81,9 +81,24 @@ h2 {
 
 .text {
   text-align: center;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-left: 220px;
+  margin-right: 220px;
+  min-width: 300px; 
+  padding: 20px; 
 }
+
+.text-color {
+  color: #ef952b; 
+  padding-bottom: 20px;
+}
+
+.text-decoration {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+
+
 
 div {
   display: flex;
@@ -195,6 +210,11 @@ nav a:hover {
 
 .nav-link {
   border-bottom: 3px solid #ef952b;
+}
+
+.text-color {
+  color: #ef952b; 
+
 }
 
 .logo img {
