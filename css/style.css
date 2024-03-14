@@ -189,6 +189,7 @@ div {
 nav {
   background-color: black;
   overflow: hidden;
+  color: white; 
 }
 
 nav a {
@@ -298,23 +299,28 @@ li {
 
 #check {
   display: none;
+  
 }
-@media (max-width: 930px) {
+@media (max-width: 970px) {
   .menu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     right: -100%;
     z-index: 100;
     background-color: black;
+    background-size: auto;
+    color: white;
+    padding: 10px;
     transition: all 0.2s ease-in-out;
   }
   .menu li {
     margin-top: 40px;
+    color: white;
   }
   .menu li a {
     padding: 10px;
@@ -322,16 +328,17 @@ li {
   .open-menu,
   .close-menu {
     display: block;
+
   }
   #check:checked ~ .menu {
-    left: 0;
-    color: white;
+    right: 0;
   }
 }
 
 @media (max-width: 930px) {
   .header {
     text-align: center;
+    color: white; 
   }
 }
 
