@@ -79,17 +79,19 @@ h2 {
   text-decoration: none;
 }
 
-.text {
-  text-align: center;
-  margin-left: 220px;
-  margin-right: 220px;
-  min-width: 300px;
-  padding: 20px;
-}
+
 
 .text-color {
   color: #ef952b;
   padding-bottom: 20px;
+}
+
+.text {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-width: 300px;
+  padding: 20px;
 }
 
 .text-decoration {
