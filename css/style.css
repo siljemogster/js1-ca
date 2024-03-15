@@ -365,14 +365,12 @@ li {
 
 .text-positioned a {
   text-decoration: none;
-  color: white;
 }
 
 .button-positioned {
   text-align: center;
   position: relative;
   padding: 20px;
-  color: black;
 }
 
 button {
