@@ -33,7 +33,7 @@ export function createMovie(movie) {
   movieElement.append(imageElement);
   movieElement.append(movieDescriptionElement);
   movieElement.append(link);
-  movieElement.append(addToCartButton);
+  
 
   return movieElement;
 }
