@@ -32,11 +32,5 @@ function createHtmlForProductThumbnail(product) {
     thumbnailContainer.style.backgroundImage = `url(${src})`;
 
 
-
-
-
-
-
-
-
 }
+
