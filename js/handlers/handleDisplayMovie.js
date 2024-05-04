@@ -1,7 +1,7 @@
-import { fetchMovie } from "../fetchMovie.js";
+import { fetchMovie } from "/js/api/fetchMovie.js";
 import { displayMovie } from "../ui/movies/displayMovie.js";
 import { displayMessage } from "../ui/shared/displayMessage.js";
-import { getQueryParam } from "../helper/getQueryParam.js";
+import  getQueryParam  from "/js/helper/getQueryParams.js";
 
 export async function handleDisplayMovie() {
   const id = getQueryParam("id");
