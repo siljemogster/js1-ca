@@ -1,5 +1,6 @@
 import { fetchProduct } from "../../api/fetchProducts.js";
 import { displayMessage } from "../../ui/common/displayMessage.js";
+import { displayMovie } from "../../ui/movies/displayMovie.js";
 
 export async function displayProduct() {
   const search = window.location.search;
@@ -13,8 +14,9 @@ export async function displayProduct() {
   try {
     const product = await fetchProduct(id);
     console.log(product);
-    renderProduct("#product-container", product);
+    displayMovie("#product-container", product);
   } catch (error) {
     displayMessage("error", "There was an error fetching the movies");
   }
 }
+console.log("product:", product); 

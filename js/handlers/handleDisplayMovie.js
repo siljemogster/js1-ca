@@ -1,4 +1,4 @@
-import { fetchMovie } from "./api/fetchMovie.js";
+import { fetchMovie } from "../fetchMovie.js";
 import { displayMovie } from "../ui/movies/displayMovie.js";
 import { displayMessage } from "../ui/shared/displayMessage.js";
 import { getQueryParam } from "../helper/getQueryParam.js";
