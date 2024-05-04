@@ -13,8 +13,8 @@ export function handleAddToCartButtons() {
 function handleCartClick(event) {
   console.log(event.target);
 
-  const { id, title, price, image } = event.target.dataset;
-  const item = { id, title, price, image };
+  const { id, name, price, image } = event.target.dataset;
+  const item = { id, name, price, image };
 
   storage.addItemToCart(item);
   renderItemCount();
